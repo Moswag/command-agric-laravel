@@ -23,3 +23,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/login', [ApiController::class, 'login']);
 Route::post('/register', [ApiController::class, 'registerFarmer']);
 Route::get('/view_prices', [ApiController::class, 'viewGMBPrices']);
+Route::get('/distribution/{email}', [ApiController::class, 'viewDistributions']);
+Route::post('/register', [ApiController::class, 'registerFarmer']);
+Route::post('/yield', [ApiController::class, 'saveYield']);
+Route::get('/yield/{email}', [ApiController::class, 'getFarmerYields']);
+Route::get('/notifications/{email}', [ApiController::class, 'viewWeatherNotifications']);

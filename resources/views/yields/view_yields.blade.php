@@ -20,7 +20,7 @@
                         <th>Crop</th>
                         <th>Quantity</th>
                         <th>Date</th>
-                        <th>Action</th>
+                        <th>Status</th>
                     </tr>
                     </thead>
                     <tfoot>
@@ -29,7 +29,7 @@
                         <th>Crop</th>
                         <th>Quantity</th>
                         <th>Date</th>
-                        <th>Action</th>
+                        <th>Status</th>
                     </tr>
                     </tfoot>
                     <tbody>
@@ -38,7 +38,8 @@
                             <td>{{$yd->farmerId}}</td>
                             <td>{{$yd->crop}}</td>
                             <td>{{$yd->quantity}}</td>
-                            <td>{{$yd->date_created}}</td>
+                            <td>{{$yd->created_at}}</td>
+                            <td>{{$yd->status}}</td>
                         </tr>
                     @endforeach
 

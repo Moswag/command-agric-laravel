@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+use App\Models\SystemConstants;
 use App\Models\Yields;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class PerfomingFarmerController extends Controller
      */
     public function index()
     {
-        $yields=Yields::all();
+        $yields=Yields::where('status',SystemConstants::YIELD_EXCEED)->get();
         return view('yields.view_yields',compact('yields'));
     }
 

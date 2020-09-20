@@ -21,4 +21,8 @@ class SystemConstants
     const FARM_STATUS_VACANT = 'Vacant';
     const FARM_OCCUPIED_OCCUPIED = 'Occupied';
 
+    const YIELD_EXCEED = 'Exceed';
+    const YIELD_SHORT= 'Short';
+    const YIELD_EQUALISED = 'Equalised';
+
 }
